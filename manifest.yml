@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: GS_v1.0_test
+  host: GS-v1-test
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - GS_Cloudant_NoSQL_DB-g1
+  buildpack: python_buildpack
